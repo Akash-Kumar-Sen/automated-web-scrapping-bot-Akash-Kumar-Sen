@@ -78,6 +78,8 @@ def _generate_data_instances(extension,page_number):
 
         csv_row_list.append(row_instance_list)
     driver.quit()
-    #sleep(10)
+    
+    # 10 seconds sleep for not getting blocked.
+    sleep(10)
 
     return csv_row_list
